@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/crud", require("./routes/crudRoute"));
+app.use("/user", require("./routes/userRoute"));
 
 app.listen(8080, () => {
   console.log("Server running on http://localhost:8080");
